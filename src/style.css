@@ -1,0 +1,219 @@
+* {
+  font-family: Roboto, sans-serif;
+  margin:0;
+  padding:0;
+}
+.header{
+	background-color: #ccc;
+	display:flex;
+	flex-direction:row;
+}
+.header .left-section, .header .right-section{
+	flex:50%;
+}
+.header .right-section{
+	text-align:right;
+}
+.header .right-section ul{ 
+	list-style-type:none;
+	margin:0; 
+	padding:25px 10px;  
+}
+.header .right-section ul li{ 
+	display:inline-block;
+	padding-right:10px;
+}
+.header .right-section ul li a, .header .right-section ul li a:hover, .header .right-section ul li a:active, .header .right-section ul li a:visited{ 
+	color:#000;
+	text-decoration:none;
+}
+.main-container{
+  display:flex;
+  flex-flow: row wrap;
+  padding:10px;
+  font-size:14px;
+}
+.page-title{
+  padding:20px 10px;  
+} 
+
+.books{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap; 
+    justify-content: center;
+	align-items:center;
+}
+.books .book{
+	border:1px solid #ccc; 
+	padding:10px;
+	margin:2%;
+	box-sizing:border-box;
+	background-color:#ccc;
+	width:215px;
+}
+.button-cls, .gray-button-cls{
+	background-color:#bf4444;
+	padding:5px 10px;
+	color:#FFF;
+	display:block;
+	margin:0 auto; 
+	border:none;
+}
+.gray-button-cls{
+	background-color:#dcc2c2;
+}
+.link-cls{
+	text-decoration:none;
+}
+.title{
+	display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.description{
+	font-size:12px;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+	margin-bottom:10px;
+} 
+.produt-image {
+	text-align:center; 
+}
+.produt-image img
+{
+	width:80%;
+	height:200px;
+}
+.product-details{
+	display:flex;
+	flex-direction:row;
+}
+.product-details img{
+	padding:15px;
+}
+.product-details .title{
+	padding:15px 0;
+}
+.product-details .details span{
+	display:block;
+	padding:5px;
+}
+
+.product-details .description{
+	background-color:#ccc;
+	font-size:14px; 
+	padding:10px;
+	width:90%;
+	height:50%;
+}
+.button-container{
+	text-align:left;
+	margin:10px 0 20px 0;
+}
+.button-container a, .button-container button{
+	text-decoration:none;
+	display:inline-block;
+	margin-right:10px;
+}
+.orders{
+	padding:10px;
+}
+.orders .order{
+	border:1px solid #ccc; 
+	margin-bottom:10px;
+}
+.orders .top-section{
+	background-color:#fff2f2;
+	padding:10px;
+}
+.orders .top-section, .orders .bottom-section{
+	display:flex;
+	flex-direction:row;
+}
+.orders .top-section div{
+	flex:50%;
+}
+.orders .top-section .order-status{
+	text-align:right;
+}
+.orders .bottom-section{
+	padding:15px;
+}
+.orders .bottom-section .details div{
+	padding:5px 15px;
+}
+.checkout-container{
+	display:flex;
+	flex-direction:row;
+}
+.checkout-container .left-container, .checkout-container .right-container{
+	flex:50%;
+	margin:20px;
+}
+.gray-container{
+	background-color:#dcc2c2;
+	padding:10px;
+	margin-top:10px;
+	font-size:14px;
+}
+.gray-container form label{
+	display:block;
+	padding:8px;
+}
+.gray-container form label span{
+	display:inline-block;
+	width:100px;
+}
+.cart-items{
+	display:flex;
+	flex-direction:row; 
+}
+.cart-items .product-img img{
+	width:80px;
+}
+.cart-items .item{
+	padding:10px;
+}
+.cart-items .product-title-quantity span{
+	display:block;
+	padding-bottom:5px;
+}
+.payment-info{
+	padding-right:30px;
+	font-size:14px;
+}
+.payment-info h3{
+	margin:15px 0 10px 0;
+}
+.payment-info div{
+	margin:15px 0; 
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+.payment-info .total-price{
+	border-top:1px solid #ccc;
+	padding-top:15px;
+}
+.cart-items .remove-btn button{
+	background-color:#bf4444;
+	padding:5px 10px;
+	color:#FFF;
+	display:block;
+	margin:0 auto; 
+	border:none;
+}
+.cart-items .product-title-quantity {
+	flex:2;
+}
+
+@media only screen and (max-width: 600px) {
+	.header, .main-container, .books, .product-details, .orders .top-section, .orders .bottom-section, .checkout-container, .cart-items, .payment-info div{ 
+		flex-direction:column; 
+	}
+} 

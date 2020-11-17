@@ -4,7 +4,7 @@ Used React JS version v17.0.1
 
 * created a e-commerce website using react v17 and Redux.
 * json server is running on port 8000.
-* installed react router, axios, json server, redux and redux saga.
+* installed react router, axios, json server, redux, redux saga and typescript.
 * Home screen will have books images and Buy Now Button on them.
 ![Home Screen](https://github.com/suresh-madipalli/eCommerce-task/blob/main/screenshots/Home.jpg)
 * on clicking any book image, user will be redirected to book details screen.

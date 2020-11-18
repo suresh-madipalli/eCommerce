@@ -68,10 +68,10 @@ class Cart extends Component<CartProps> {
             </div>
             <div className="payment-info">
               <h3>Payment Info</h3>
-              <div><span>Item Price:</span><span>{`$${total}.00`}</span></div>
+              <div><span>Item Price:</span><span>{`$${total}`}</span></div>
               <div><span>Tax:</span><span>$7.50</span></div>
               <div><span>Shopping Charge:</span><span>$5.00</span></div>
-              <div className="total-price"><span>Total:</span><span>{`$${totalAmount}.00`}</span></div>
+              <div className="total-price"><span>Total:</span><span>{`$${totalAmount}`}</span></div>
             </div>
             <div className="button-container">
               <button className="gray-button-cls" >Checkout</button>

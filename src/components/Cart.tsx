@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import CartItem from './CartItem';
 import Header from './Header';
 import { connect } from 'react-redux';
-import { checkout, removeFromCart } from '../actions';
+import { removeFromCart } from '../actions';
 import { getTotal, getCartProducts } from '../reducers'; 
 
 interface CartProps {
@@ -88,5 +88,5 @@ export default connect(
     products: getCartProducts(state),
     total: getTotal(state),
   }),
-  { checkout, removeFromCart },
+  { removeFromCart },
 )(Cart)
